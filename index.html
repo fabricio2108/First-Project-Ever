@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <title>Number one</title>
+        
+        <style>
+body{
+    display: flex;
+    justify-content: center;
+    height: 100hv;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{font-size: 20px;
+    color: white;
+    height: 300vh;
+    width: 300vw;
+    border-radius: 10px;
+    background: #191919;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container{ 
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 150px;
+}
+button{ 
+    height: 30px;
+    width: 50px;
+    background: white;
+    border-radius: 5px;
+    color: blue;
+    font-weight: 600;
+}
+        </style>
+    </head>
+    <body>
+<div class="box">
+<p>2R$ ou um presente misterioso?</p>
+<div class="buttons-container">
+    <button>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">PM</a>
+    </button>
+    <button id="no">2R$</button>
+</div>    
+</div>
+
+    </body>
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+        button.addEventListener( 'mouseover', fucntion)
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px"; 
+    </script>
+</html>
